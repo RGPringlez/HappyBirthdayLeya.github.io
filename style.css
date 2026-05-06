@@ -36,6 +36,8 @@ html {
 
 section.sect_button {
 
+    position: relative;
+    z-index: 2;
     margin: 0 auto;
     width: 300px;
     text-align: center;
@@ -73,7 +75,8 @@ section.sect_button {
 
 section.gif_section {
 
-    
+    position: relative;
+    z-index: 2;
     visibility: hidden;
     display: none;
     margin: 0 auto;
@@ -86,14 +89,47 @@ section.gif_section {
     h1 {
 
         margin-bottom: 200px;
+        color: white;
 
     }
     img {
 
         width: 200px;
-        scale: 3;
+        scale: 2;
         margin: 0 auto;
 
     }
+
+    audio {
+
+        display: flex;
+        position: absolute;
+        top: 120%;
+        left: 2%;
+
+    }
+
+}
+
+div#star1 {
+
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 1%;
+    z-index: 1;
+    opacity: 70%;
+
+}
+
+div#star2 {
+
+
+    position: absolute;
+    display: flex;
+    top: 3%;
+    left: 0%;
+    z-index: -2;
+    opacity: 30%;
 
 }
