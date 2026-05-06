@@ -1,6 +1,7 @@
 html {
 
     background-color: rgb(165, 128, 239);
+    overflow-x: hidden;
 
 }
 
