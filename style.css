@@ -24,9 +24,41 @@ html {
 
 }
 
+@keyframes shrink_image {
+
+    0% {
+
+        transform: scale(1);
+        opacity: 100;
+
+    }
+
+    100% {
+
+        transform: scale(0);
+        opacity: 0%;
+
+    }
+
+
+
+}
+
 .apply-grow {
 
     animation: grow 2s linear;
+
+}
+
+.apply_grow_image {
+
+    animation: shrink_image 2s reverse;
+
+}
+
+.apply_shrink_image {
+
+    animation: shrink_image 2s linear;
 
 }
 
@@ -97,6 +129,8 @@ section.gif_section {
         width: 200px;
         scale: 2;
         margin: 0 auto;
+        display: none;
+        visibility: hidden;
 
     }
 
@@ -105,7 +139,7 @@ section.gif_section {
         display: flex;
         position: absolute;
         top: 120%;
-        left: 2%;
+        left: 5%;
 
     }
 
